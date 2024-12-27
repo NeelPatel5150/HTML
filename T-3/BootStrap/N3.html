@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive FAQ</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Frequently Asked Questions</h1>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action faq-question" data-target="#faq1">Question 1: What is Lorem Ipsum?</a>
+            <div id="faq1" class="faq-answer">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+            <a href="#" class="list-group-item list-group-item-action faq-question" data-target="#faq2">Question 2: Why do we use it?</a>
+            <div id="faq2" class="faq-answer">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+            </div>
+
+            <a href="#" class="list-group-item list-group-item-action faq-question" data-target="#faq3">Question 3: Where can I get some?</a>
+            <div id="faq3" class="faq-answer">
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                // Hide all FAQ answers
+                document.querySelectorAll('.faq-answer').forEach(answer => {
+                    answer.style.display = 'none';
+                });
+
+                // Toggle the clicked question's answer
+                const target = document.querySelector(this.dataset.target);
+                if (target.style.display === 'block') {
+                    target.style.display = 'none';
+                } else {
+                    target.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
