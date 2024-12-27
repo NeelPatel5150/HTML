@@ -1,0 +1,74 @@
+<!--Write a form to collect details of a user such as name, password, 
+address, radio button to choose subject of book he wants to buy, Dropdown 
+to choose favorite author by providing categories like novel, story book, 
+comics and comments for the last book he read. Give title to form with outline,
+submit and reset buttons-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Store Page</title>
+</head>
+<body>
+  <form action="">
+    <font color="black">
+    <fieldset>
+      <legend>Book Shop</legend>
+      <caption align="center">Form </caption>
+      <table align="center" width="550" height="550" bgcolor="gainsboro">
+        <tr>
+          <td>Name: </td>
+          <td><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password" id=""></td>
+        </tr>
+        <tr>
+          <td>Address: </td>
+          <td><textarea name="Address" id="" cols="30" rows="10"> Address</textarea></td>
+        </tr>
+        <tr>
+          <td>What subject book do you want to buy?? </td>
+          <td>  <input type="radio" name="yes">Fictional<br>
+            <input type="radio" name="yes">Motivational<br>
+            <input type="radio" name="yes">Mythology<br>
+           <input type="radio" name="yes">Romance <br>
+           <input type="radio" name="yes">Horror</td>
+        </tr>
+        <tr>
+          <td>Choose your favourite author :</td>
+            <td> <select name="dd2" id="">
+              <option>---SELECT---</option>
+              <optgroup label="Novel">
+                <option value="">Stephen King</option>
+                <option value="">Tom Clancy</option>
+              </optgroup>
+              <optgroup label="Horror">
+                <option value="">Scott Smith</option>
+                <option value="">Shirley Jackson</option>
+              </optgroup>
+              <optgroup label="Comics">
+                <option value="">Geoff Johns</option>
+                <option value="">Mark Waid</option>
+              </optgroup>
+              <optgroup label="Rom-Coms">
+                <option value="">Connie Wills</option>
+                <option value="">Toni Jordan</option>
+              </optgroup>
+            </select></td>
+          </tr>
+          <tr>
+            <td>Your Review for the last book you read : </td>
+            <td><textarea name="review" id="" cols="30" rows="10" placeholder="Review"></textarea></td>
+          </tr>
+          <tr>
+            <td><button type="submit">Submit Here</button></td>
+          </tr>
+      </table>
+    </fieldset>
+  </font>
+  </form>
+</body>
+</html>

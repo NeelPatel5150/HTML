@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Sign-Up Form</title>
+    </head>
+    <body>
+        <form method="get" action="task1.html" align="left">
+            <fieldset>
+                <legend align="left">Sign-Up</legend>
+                <label>User Name : <input type="text" placeholder="Username" name="uname" autofocus autocomplete="autocomplete">
+                </label>
+                <input type="image" src="Neel.jpeg.jpg" alt="Photo" width="100" height="100"><br><br>
+
+                <label>Password : <input type="password" maxlength="5"></label><br><br>
+
+                <label>Contact Number : <input type="tel" name="tel"></label><br><br>
+
+                <label>Your Email Id : <input type="email"   placeholder="E-Mail"></label><br><br>
+
+                <label >Gender : <input type="radio" checked name="gender" value="male"/>Male</label>
+
+                <label ><input type="radio" name="gender" value="female"/>Female</label><br><br>
+
+                <label >Area of intrest : <input type="checkbox" name="DS">DS</label>
+                <label ><input type="checkbox" name="DBMS">DBMS</label>
+                <label ><input type="checkbox" name="CN">CN</label>
+                <label ><input type="checkbox" name="FSD">FSD</label><br><br>
+
+                <label >Age : <input type="range" id="age" name="age" min="20" max="70" step="2" value="" oninput="num.value=this.value"></label>
+
+                <label >Your Age : <input type="text" id="num" disabled></label><br><br>
+
+                <label >Number : <input type="number" name="number" min="10" max="20"></label>
+
+                <br><br>
+
+                <label >DOB : <input type="date" name="dob" min="2023-10-01" <!--YYYY-MM-DD--></label>
+
+                <br><br>
+
+                <label > Department : </label>
+                <select name="department" >
+                    <option value="" selected disabled hidden> Select Department</option>
+                    <optgroup label="CE">
+                        <option >CSE</option>
+                        <option >CST</option>
+                        <option >CSD</option>
+                        <option >RAI</option>
+                    </optgroup>
+                    <optgroup label="Mech">
+                        <option >CAD</option>
+                        <option >CAM</option>
+                        <option >Thermal</option>
+                    </optgroup>
+                </select>
+                    <br><br>
+
+                    <label >Address : </label>
+                    <textarea name="addr" rows="2" cols="20">Enter Your Address</textarea><br><br>
+
+                    <label >Uplod CV : <input type="file" name="f1" mmultiple></label><br><br>
+
+                    <input type="submit" value="Click Me">
+                    <input type="reset" value="Reset">
+                
+                
+            </fieldset>
+        </form>
+    </body>
+</html>

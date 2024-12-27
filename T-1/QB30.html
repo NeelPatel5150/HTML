@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <legend align="center">Registration Form</legend>
+        <table border="3" rules="all" width="400" height="600" bgcolor="gainsboro" align="center">
+            <tr>
+                <td align="center" ><label for="Firstname">Enter your first name </label></td>
+                <td><input type="text" name="Firstname" placeholder="Enter your first name"></td>
+            </tr>
+            <tr>
+                <td align="center" ><label for="lastname">Enter your last name</label></td>
+                <td><input type="text" name="lastname"></td>
+            </tr>
+            <tr>
+                <td align="center" ><label for="password">Enter your passsword</label></td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td align="center" ><label for="repass">Re-Enter your password</label></td>
+                <td><input type="password" name="repass"></td>
+            </tr>
+            <tr>
+                <td align="center" ><label for="email">Enter your email</label></td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td align="center" ><label for="mobile">Enter your mobile number</label></td>
+                <td><input type="tel" name="mobile"></td>
+            </tr>
+            <tr>
+                <td align="center" ><label for="Address">Enter your Address</label></td>
+                <td><textarea name="Address" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td align="center" ><label for="gender">Select your gender</label></td>
+                <td><input type="radio" name="gender" checked> Male 
+                <input type="radio" name="gender">Female 
+                <input type="radio" name="gender">Others</td>
+            </tr>
+            <tr>
+                <td align="center" ><label for="hobby">Select your hobby</label></td>
+                <td><input type="checkbox" name="hobby" checked>Hobby1
+                <input type="checkbox" name="hobby">Hobby2
+                <input type="checkbox" name="hobby">Hobby3</td>
+            </tr>
+            <tr>
+                <td align="center" ><label for="dob">Select your DOB</label></td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td  align="center" ><label for="country">Select your country</label></td>
+                <td><select name="country">
+                    <option value="select" selected disabled hidden>select your country</option>
+                    <option value="India">India</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Russia">Russia</option>
+                 </select>
+               </td>
+            </tr>
+            <tr>
+                <td  align="center" ><label for="pic"> Upload your pic</label></td>
+                <td><input type="file" name="pic"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <button type="submit">Save My Data</button> <button type="reset">Reset My Data</button> 
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

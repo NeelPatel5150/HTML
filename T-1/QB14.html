@@ -1,0 +1,37 @@
+<!--Write an HTML code to design following Form-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form </title>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend> Sign Up </legend>
+        User Name:<input type="text" placeholder="Enter User Name" name="username"><br><br>
+        Password: <input type="password" name="password" id=""><br><br>
+        Gender:<input type="radio" name="Gender" id="" value="Male" checked> Male 
+          <input type="radio" name="Gender" id="" value="Female">Female <br><br>
+        Area Of Interest:
+            <input type="checkbox" name="int" checked>DS 
+            <input type="checkbox" name="int" >DBMS
+            <input type="checkbox" name="int" >CN 
+            <input type="checkbox" name="int" >Full Stack <br><br>
+        Department:<select name="dd1" id="">
+              <option disabled selected hidden>--Select Department-</option>
+              <option value="CSE">CSE</option>
+              <option value="CE">CE</option>
+              <option value="IT">IT</option>
+            </select><br><br>
+        Address:<textarea name="Address" cols="30" rows="10" placeholder="Hello"></textarea><br><br>
+        Upload CV:<input type="file" name="CV" ><br><br>
+        Date:<input type="date" name="date" ><br><br>
+        Email:<input type="email" name="email"><br><br>
+        <button type="submit">Click Me</button>
+        <button type="reset">Reset</button>
+    </fieldset>
+  </form>
+</body>
+</html>
