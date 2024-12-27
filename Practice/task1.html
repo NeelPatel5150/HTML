@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Effect</title>
+    <style>
+        /* Style for the resizable div */
+.resizable {
+    width: 100px; /* Original width */
+    height: 100px; /* Original height */
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #007BFF;
+    transition: width 0.5s ease, height 0.5s ease; /* Smooth transition */
+}
+
+/* Hover effect to increase size */
+.resizable:hover {
+    width: 200px; /* Double the width */
+    height: 300px; /* Triple the height */
+}
+
+    </style>
+</head>
+<body>
+    <div class="resizable">Hover over me!</div>
+</body>
+</html>

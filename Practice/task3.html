@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Example</title>
+    <style>
+        /* Initial styling for the animated element */
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            position: relative; /* To allow movement */
+            margin: 50px auto;
+            animation: changeBgAndMove 4s ease-in-out 2s infinite; /* 2s delay, 4s duration */
+        }
+
+        /* Keyframes for animation */
+        @keyframes changeBgAndMove {
+            0% {
+                background-color: lightblue;
+                left: 0;
+            }
+            25% {
+                background-color: lightgreen;
+                left: 50px;
+            }
+            50% {
+                background-color: yellow;
+                left: 100px;
+            }
+            100% {
+                background-color: orange;
+                left: 0; /* Return to initial position */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-box"></div>
+</body>
+</html>
