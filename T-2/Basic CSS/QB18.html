@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+#main {margin-left: 4px;width:auto}
+
+#rightsidebar {
+  float: none;
+  width: auto;
+}
+
+.menuitem {
+  background: #CDF0F6;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  margin: 4px;
+  padding: 2px;
+}
+
+@media screen and (min-width: 380px) {
+  #rightsidebar {width: 200px; float: right;}
+  #main {margin-left: 16px;width:200px}
+}
+</style>
+</head>
+<body>
+    
+    
+  <div id="rightsidebar">
+    <ul type="none">
+      <li class="menuitem">Menu-item 1</li>
+      <li class="menuitem">Menu-item 2</li>
+      <li class="menuitem">Menu-item 3</li>
+      <li class="menuitem">Menu-item 4</li>
+      <li class="menuitem">Menu-item 5</li>
+    </ul>
+  </div>
+  <div id="main">
+    <h1>Resize the browser window to see the effect!</h1>
+    <p>This example shows a menu that will float to the left of the page if the viewport is 480 pixels wide or wider. If the viewport is less than 480 pixels, the menu will be on top of the content.</p>
+  </div>
+ 
+
+</body>
+</html>
